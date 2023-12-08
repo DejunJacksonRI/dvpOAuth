@@ -322,6 +322,7 @@ class DVPOAuth:
 
     @_renew_token
     def account_search(self, *args, **kwargs):
+        pdb.set_trace()
         """search account based on the account number, first and last name, meter number and premise number"""
         SEARCH_BASE_URL = os.environ["SEARCH_BASE_URL"]
         if not self.token:
